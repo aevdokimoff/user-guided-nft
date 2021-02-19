@@ -1,0 +1,16 @@
+PODS:
+  - StatusAlert (1.1.1)
+
+DEPENDENCIES:
+  - StatusAlert (~> 1.1.1)
+
+SPEC REPOS:
+  trunk:
+    - StatusAlert
+
+SPEC CHECKSUMS:
+  StatusAlert: a18ec3c33d36a06d4479c1f2b15ffac67aaf7ab1
+
+PODFILE CHECKSUM: 714cc2d5cfb01c6370bc9e3fd30ee0e16fc621e4
+
+COCOAPODS: 1.10.0
