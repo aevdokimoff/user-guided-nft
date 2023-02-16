@@ -11,6 +11,18 @@ import ARKit
 
 extension MainViewController {
     
+    // Generate basic shape covering the whole view
+    func generateShape() -> CAShapeLayer {
+        let shape = CAShapeLayer()
+        let screenPath = UIBezierPath(rect: CGRect(x: 0, y: 0, width: self.clusteredConvexHullViewWidth, height: self.clusteredConvexHullViewHeight))
+        shape.opacity = 0.5
+        shape.lineWidth = 2
+        shape.strokeColor = UIColor(hue: 0.787, saturation: 0.78, brightness: 0.52, alpha: 1.0).cgColor
+        shape.fillColor = UIColor(hue: 0.787, saturation: 0.14, brightness: 0.90, alpha: 1.0).cgColor
+        shape.path = screenPath.cgPath
+        return shape
+    }
+    
     // Visualize features clustering
     func visualizeFeaturesClustering(_ featurePointsArray: [vector_float3], _ renderer: SCNSceneRenderer) {
         let projectPoints = parseProjectPoints(featurePointsArray, renderer: renderer)
