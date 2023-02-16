@@ -38,10 +38,10 @@
 		5D7D00DAB5083F2A79959416EC93E404 /* Pods-UserGuidedNFT-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UserGuidedNFT-umbrella.h"; sourceTree = "<group>"; };
 		618D8BA8B9480ED9896C06A3A822E72F /* StatusAlert-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StatusAlert-umbrella.h"; sourceTree = "<group>"; };
 		647AB8DB9D88756CF9D0E92B99ABAB55 /* StatusAlert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StatusAlert.swift; path = Sources/StatusAlert/StatusAlert.swift; sourceTree = "<group>"; };
-		7A1BE18D14B5E4C93DE1007123A90E5E /* StatusAlert */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = StatusAlert; path = StatusAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A1BE18D14B5E4C93DE1007123A90E5E /* StatusAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StatusAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E6E9F7A042C95B387DE5328E04E59CF /* StatusAlert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = StatusAlert.release.xcconfig; sourceTree = "<group>"; };
 		812679F3525A10474DEE8962A63E660E /* Pods-UserGuidedNFT.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-UserGuidedNFT.modulemap"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9ED8F97957C800E515DCAB2ED38E7949 /* StatusAlert-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StatusAlert-prefix.pch"; sourceTree = "<group>"; };
 		BBD881F0A1157D4BDAAE618959105269 /* Pods-UserGuidedNFT-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UserGuidedNFT-frameworks.sh"; sourceTree = "<group>"; };
 		C2DF477E246E49D52B3EB2DA74842DD1 /* Pods-UserGuidedNFT-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UserGuidedNFT-dummy.m"; sourceTree = "<group>"; };
@@ -138,7 +138,6 @@
 				F994987CCAB9BCB6601441BD82F07A5A /* UIDevice+Platform.swift */,
 				BFAAB1D70FE1E612CCD2615991F9CE16 /* Support Files */,
 			);
-			name = StatusAlert;
 			path = StatusAlert;
 			sourceTree = "<group>";
 		};
@@ -146,7 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				DBFBF06481DF250D8036B8BDF44FB315 /* Pods-UserGuidedNFT */,
-				7A1BE18D14B5E4C93DE1007123A90E5E /* StatusAlert */,
+				7A1BE18D14B5E4C93DE1007123A90E5E /* StatusAlert.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -214,7 +213,7 @@
 			);
 			name = StatusAlert;
 			productName = StatusAlert;
-			productReference = 7A1BE18D14B5E4C93DE1007123A90E5E /* StatusAlert */;
+			productReference = 7A1BE18D14B5E4C93DE1007123A90E5E /* StatusAlert.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		98F3BFC624596E487F5C3FAC450675B2 /* Pods-UserGuidedNFT */ = {
@@ -391,7 +390,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/StatusAlert/StatusAlert-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/StatusAlert/StatusAlert-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -566,7 +565,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/StatusAlert/StatusAlert-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/StatusAlert/StatusAlert-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

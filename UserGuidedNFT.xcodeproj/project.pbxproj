@@ -18,6 +18,11 @@
 		AC73A4FF255C60B400AF9054 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC73A4FE255C60B400AF9054 /* Assets.xcassets */; };
 		AC73A502255C60B400AF9054 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC73A500255C60B400AF9054 /* LaunchScreen.storyboard */; };
 		ACF384D125669F820054350B /* ConvexHull.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF384D025669F820054350B /* ConvexHull.swift */; };
+		ACF5B786299E709D0024F98A /* MainViewController+Rendering.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF5B785299E709D0024F98A /* MainViewController+Rendering.swift */; };
+		ACF5B788299E71AB0024F98A /* MainViewController+Visualization.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF5B787299E71AB0024F98A /* MainViewController+Visualization.swift */; };
+		ACF5B78A299E72640024F98A /* MainViewController+Meshing.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF5B789299E72640024F98A /* MainViewController+Meshing.swift */; };
+		ACF5B78C299E73350024F98A /* VectorOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF5B78B299E73350024F98A /* VectorOperations.swift */; };
+		ACF5B790299E74160024F98A /* PointsPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF5B78F299E74160024F98A /* PointsPath.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +40,11 @@
 		AC73A501255C60B400AF9054 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC73A503255C60B400AF9054 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACF384D025669F820054350B /* ConvexHull.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvexHull.swift; sourceTree = "<group>"; };
+		ACF5B785299E709D0024F98A /* MainViewController+Rendering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+Rendering.swift"; sourceTree = "<group>"; };
+		ACF5B787299E71AB0024F98A /* MainViewController+Visualization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+Visualization.swift"; sourceTree = "<group>"; };
+		ACF5B789299E72640024F98A /* MainViewController+Meshing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+Meshing.swift"; sourceTree = "<group>"; };
+		ACF5B78B299E73350024F98A /* VectorOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VectorOperations.swift; sourceTree = "<group>"; };
+		ACF5B78F299E74160024F98A /* PointsPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsPath.swift; sourceTree = "<group>"; };
 		BF5B6C408AFBC4299538F2AD /* Pods-UserGuidedNFT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UserGuidedNFT.debug.xcconfig"; path = "Target Support Files/Pods-UserGuidedNFT/Pods-UserGuidedNFT.debug.xcconfig"; sourceTree = "<group>"; };
 		DD942824653DCE654B226576 /* Pods_UserGuidedNFT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UserGuidedNFT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD8811CCE7260944B6D51B5D /* Pods-UserGuidedNFT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UserGuidedNFT.release.xcconfig"; path = "Target Support Files/Pods-UserGuidedNFT/Pods-UserGuidedNFT.release.xcconfig"; sourceTree = "<group>"; };
@@ -65,6 +75,8 @@
 			children = (
 				AC08EDE12566C75F00F563CF /* ConvexHull */,
 				AC08EDDC2566C70900F563CF /* DBSCAN */,
+				ACF5B78B299E73350024F98A /* VectorOperations.swift */,
+				ACF5B78F299E74160024F98A /* PointsPath.swift */,
 			);
 			path = Algorithms;
 			sourceTree = "<group>";
@@ -119,6 +131,9 @@
 				AC73A4F5255C60B300AF9054 /* AppDelegate.swift */,
 				AC73A4F7255C60B300AF9054 /* SceneDelegate.swift */,
 				AC08EDC72566B4CD00F563CF /* MainViewController.swift */,
+				ACF5B785299E709D0024F98A /* MainViewController+Rendering.swift */,
+				ACF5B789299E72640024F98A /* MainViewController+Meshing.swift */,
+				ACF5B787299E71AB0024F98A /* MainViewController+Visualization.swift */,
 				AC08EDD92566BCEA00F563CF /* Algorithms */,
 				AC08EDDB2566BCF200F563CF /* Extensions */,
 				AC73A4FB255C60B300AF9054 /* Main.storyboard */,
@@ -256,6 +271,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC08EDC82566B4CD00F563CF /* MainViewController.swift in Sources */,
+				ACF5B78A299E72640024F98A /* MainViewController+Meshing.swift in Sources */,
+				ACF5B786299E709D0024F98A /* MainViewController+Rendering.swift in Sources */,
+				ACF5B788299E71AB0024F98A /* MainViewController+Visualization.swift in Sources */,
+				ACF5B78C299E73350024F98A /* VectorOperations.swift in Sources */,
+				ACF5B790299E74160024F98A /* PointsPath.swift in Sources */,
 				AC73A4F6255C60B300AF9054 /* AppDelegate.swift in Sources */,
 				ACF384D125669F820054350B /* ConvexHull.swift in Sources */,
 				AC7339F725657C1700435C40 /* DBSCAN.m in Sources */,

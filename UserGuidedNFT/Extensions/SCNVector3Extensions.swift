@@ -52,9 +52,9 @@ extension SCNVector3 {
     }
     
     func abs() -> SCNVector3 {
-        let x: Float = fabs(self.x)
-        let y: Float = fabs(self.y)
-        let z: Float = fabs(self.z)
+        let x: Float = Swift.abs(self.x)
+        let y: Float = Swift.abs(self.y)
+        let z: Float = Swift.abs(self.z)
         return SCNVector3Make(x, y, z)
     }
     
