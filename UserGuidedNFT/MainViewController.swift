@@ -441,7 +441,16 @@ extension MainViewController: ARSCNViewDelegate {
     func reshapeClusteredConvexHullView(shape: CAShapeLayer) {
         DispatchQueue.main.async {
             self.clusteredConvexHullView.layer.sublayers?.forEach { $0.removeFromSuperlayer() }
-            self.clusteredConvexHullView.layer.addSublayer(shape)
+            
+            let shapeLayer = CAShapeLayer()
+            shapeLayer.path = shape.path
+                
+            shapeLayer.opacity = 0.5
+            shapeLayer.fillColor = UIColor(hue: 0.787, saturation: 0.14, brightness: 0.90, alpha: 1.0).cgColor
+            shapeLayer.strokeColor = UIColor(hue: 0.787, saturation: 0.78, brightness: 0.52, alpha: 1.0).cgColor
+            shapeLayer.lineWidth = 2.0
+                
+            self.clusteredConvexHullView.layer.addSublayer(shapeLayer)
         }
     }
 }
